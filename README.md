@@ -16,6 +16,10 @@ Online Movie Store application using TypeScript, npm, Azure SQL, and React. This
 
 <img src="image/ERD.png" width="500">
 
+## Pseudocode Flowchart
+
+<img src="image/flowchart.png" width="500">
+
 ## Instruction
 
 ### Backend
