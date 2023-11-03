@@ -234,3 +234,102 @@ Click 'Manage Movies' followed by 'Delete Movies'. Enter title, year, runningtim
 Deleted Movie Info!
 ==================================
 ```
+
+### 6.8 Browse users (Admin only)
+
+Click 'Manage Users' followed by 'Browse Users'.
+
+```
+? What would you like to do? Manage Users
+? What would you like to do? Browse Users
+
+================== USER LIST ===============
+#1
+- Username : admin1
+- ID       : 1
+- Admin?   : YES
+#2
+- Username : user1
+- ID       : 2
+- Admin?   : NO
+============================================
+```
+
+### 6.9 Delete users (Admin only)
+
+Click 'Manage Users' followed by 'Delete User'. Enter username to be deleted.
+
+```
+? What would you like to do? Manage Users
+? What would you like to do? Delete User
+? Enter username to be deleted user1
+
+============= MESSAGE ============
+User Deleted!
+==================================
+```
+
+### 6.10 Change authorisation (Admin only)
+
+Click 'Manage Users' followed by 'Change Authorization'. Enter username to be affected. If that user is admin, it will be non-admin, and vice-versa.
+
+```
+? What would you like to do? Manage Users
+? What would you like to do? Change Authorization
+? Enter username to be changed user1
+
+============= MESSAGE ============
+Changed Authorization!
+==================================
+```
+
+### 6.11 Add watchlist (Non-admin only)
+
+Click 'Add Watchlist'. Enter title of the movie to be added to the watchlist.
+
+```
+? What would you like to do? Add    Watchlist
+? Enter Movie Title The Matrix
+
+============= MESSAGE ============
+Added to watchlist!
+==================================
+```
+
+### 6.12 View watchlist (Non-admin only)
+
+Click 'View Watchlist'.
+
+```
+? What would you like to do? View   Watchlist
+=========== Watch List ==========
+#1 - The Matrix
+=================================
+```
+
+### 6.13 Delete watchlist (Non-admin only)
+
+Click 'Delete Watchlist'. Enter the title of the movie to be deleted from the watchlist.
+
+```
+? What would you like to do? Delete Watchlist
+? Enter Movie title The Matrix
+
+============= MESSAGE ============
+Movie deleted from watchlist!
+==================================
+```
+
+### 6.14 Change password
+
+Click 'Change Password'. Enter the current password, followed by new password.
+
+```
+? What would you like to do? Change Password
+? Enter current password [hidden]
+? Enter new password [hidden]
+
+============= MESSAGE ============
+Changed Password!
+==================================
+```
