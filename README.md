@@ -2,7 +2,7 @@
 
 Online Movie Store application using TypeScript, npm, Azure SQL (MSSQL), and React. This is a project assignment for the course of **Software Programming Foundation and Data Modelling** offered by **Institute of Applied Technology** in collaboration with **TAFE NSW**, Australia.
 
-## Features
+## 1. Features
 
 - Easy-to-use Command Line Interface (CLI)
 - CRUD Functionality
@@ -12,7 +12,7 @@ Online Movie Store application using TypeScript, npm, Azure SQL (MSSQL), and Rea
     - Add, update, delete, and view movie data.
     - Manage a watchlist for every user
 
-## Tech stack
+## 2. Tech stack
 
 - Programming language
   - Typescript
@@ -29,17 +29,17 @@ Online Movie Store application using TypeScript, npm, Azure SQL (MSSQL), and Rea
 - Containerization
   - Docker
 
-## ERD
+## 3. ERD
 
 <img src="image/ERD.png" width="500">
 
-## Pseudocode Flowchart
+## 4. Pseudocode Flowchart
 
 <img src="image/flowchart.png" width="500">
 
-## Instruction
+## 5. Instruction
 
-### 1. Backend
+### 5.1 Backend
 
 Locate the Backend directory
 
@@ -49,7 +49,7 @@ Locate the Backend directory
 - Run the backend server
   - In terminal, type `node index`
 
-### 2. Containerization & Azure SQL
+### 5.2 Containerization & Azure SQL
 
 \*Disclaimer: In this project, SQL Server 2022 (16.x) Linux container image was tested on MacOS and may not work on other operating systems.
 
@@ -92,7 +92,7 @@ Locate the Backend directory
   /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ABCdefgh@
   ```
 
-### 3. Set up basic database
+### 5.3 Set up basic database
 
 - Create a database called "TAFEDB"
 
@@ -141,7 +141,7 @@ Locate the Backend directory
   GO
   ```
 
-### 4. Frontend
+### 5.4 Frontend
 
 Locate the Frontend directory
 
