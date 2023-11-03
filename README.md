@@ -1,6 +1,6 @@
 # Online Movie Store
 
-Online Movie Store application using TypeScript, npm, Azure SQL (MSSQL), and React. This is a project assignment for the course of **Software Programming Foundation and Data Modelling** offered by **Institute of Applied Technology** in collaboration with **TAFE NSW**, Australia.
+Online Movie Store application using TypeScript, npm, Azure SQL (MSSQL), and React. This is a project assignment for the course of **Software Programming Foundation and Data Modelling** offered by **Institute of Applied Technology** in collaboration with **TAFE NSW** in Australia.
 
 ## 1. Features
 
@@ -37,7 +37,7 @@ Online Movie Store application using TypeScript, npm, Azure SQL (MSSQL), and Rea
 
 <img src="image/flowchart.png" width="500">
 
-## 5. Instruction
+## 5. Instruction - Set up
 
 ### 5.1 Backend
 
@@ -120,6 +120,10 @@ Locate the Backend directory
   ```
   INSERT INTO UserInfo (username, password, admin) VALUES ('admin1', 'admin1', 'YES');
   ```
+- Create a watchlist table for 'admin1', followed by `GO`
+  ```
+  CREATE TABLE admin1 (title varchar(255));
+  ```
 
 ### 5.4 Frontend
 
@@ -129,3 +133,104 @@ Locate the Frontend directory
   - In terminal, type `npm i`
 - Run
   - In terminal, type `node index`
+
+## 6. Instruction - CLI Interaction
+
+### 6.1 Sign up
+
+Click the 'Signup' option. Enter desired username followed by password. Accounts are not admin by default.
+
+```
+? Choose an option: Signup
+? Enter your username: user1
+? Enter your password: [hidden]
+```
+
+### 6.2 Log in
+
+Click the 'Login' option. Enter existing username followed by password. Once logged-in, CLI is slightly different depending on whether a user is admin or not. To create a movie list later, log-in with an admin account.
+
+```
+? Choose an option: Login
+? Enter your username: admin1
+? Enter your password: [hidden]
+```
+
+### 6.3 Add movies (Admin only)
+
+Once logged-in as admin, click 'Manage Movies' followed by 'Add Movies'. Enter title, year, runtime (in minutes), and rating (out of 10).
+
+```
+? What would you like to do? Manage Movies
+? What would you like to do? Add    Movies
+? Enter title The Matrix
+? Enter release year: 1999
+? Enter running time (mins): 136
+? Enter rating (out of 10): 8.7
+
+============= MESSAGE ============
+Updated Movie Info!
+==================================
+```
+
+### 6.4 Browse movies
+
+If logged-in as admin, click 'Manage Movies' followed by 'Browse Movies'. If logged-in as non-admin, click 'Browse Movies'.
+
+```
+? What would you like to do? Browse Movies
+
+=========== Movie List ==========
+#1 - The Matrix
+=================================
+```
+
+### 6.5 Search movies
+
+If logged-in as admin, click 'Manage Movies' followed by 'Search Movies'. If logged-in as non-admin, click 'Search Movies'. Enter the title of movie.
+
+```
+? What would you like to do? Search Movies
+? Enter Movie Name The Matrix
+
+====== DETAILED INFORMATION =====
+Title:   The Matrix
+Year:    1999
+Runtime: 136 mins
+Rating:  8.7/10
+==================================
+```
+
+### 6.6 Update movies (Admin only)
+
+Click 'Manage Movies' followed by 'Update Movies'. If logged-in as non-admin, click 'Search Movies'. Only year, runtime, or rating can be changed; title cannot be changed.
+
+```
+? What would you like to do? Manage Movies
+? What would you like to do? Update Movies
+? Enter title The Matrix
+? Enter release year: 2023
+? Enter running time (mins): 500
+? Enter rating (out of 10): 10
+
+============= MESSAGE ============
+Updated Movie Info!
+==================================
+```
+
+### 6.7 Delete movies (Admin only)
+
+Click 'Manage Movies' followed by 'Delete Movies'. Enter title, year, runningtime, and rating. If all information matches, the movie can be deleted.
+
+```
+? What would you like to do? Manage Movies
+? What would you like to do? Delete Movies
+? Enter title The Matrix
+? Enter release year: 2023
+? Enter running time (mins): 500
+? Enter rating (out of 10): 10
+
+============= MESSAGE ============
+Deleted Movie Info!
+==================================
+```
