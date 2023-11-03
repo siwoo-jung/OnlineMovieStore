@@ -1,5 +1,5 @@
 #Ignore rules for backend:
-Backend/BackendVenv
+Backend/node_modules
 
 #Ignore rules for frontend:
 Frontend/node_modules
