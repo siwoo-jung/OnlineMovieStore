@@ -13,3 +13,17 @@ Online Movie Store application using TypeScript, npm, Azure SQL, and React. This
     - Manage a watchlist for every user
 
 ## ERD
+
+<img src="image/ERD.png" width="400">
+
+## Instruction
+
+### Backend
+
+npm i
+
+npm i msnodesqlv8
+
+### Frontend
+
+npm i
