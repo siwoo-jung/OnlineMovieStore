@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 const sql = require('mssql/msnodesqlv8')
 
 const config = {
-    user: 'sa',
+    user: 'SA',
     password: 'ABCdefgh@',
     database: 'TAFEDB',
     server: 'localhost',
