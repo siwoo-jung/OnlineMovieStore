@@ -54,15 +54,19 @@ Locate the Backend directory
 \*Disclaimer: In this project, SQL Server 2022 (16.x) Linux container image was tested on MacOS and may not work on other operating systems.
 
 - Pull the SQL Server 2022 (16.x) Linux container image from the Microsoft Container Registry.
+
   ```
   sudo docker pull mcr.microsoft.com/mssql/server:2022-latest
   ```
+
 - Run the Linux container image with Docker
+
   ```
   sudo docker run -e "ACCEPT_EULA=Y" -e MSSQL_SA_PASSWORD=ABCdefgh@ -p 1433:1433 \
   --name sql1 --hostname sql1 -d \
   mcr.microsoft.com/mssql/server:2022-latest
   ```
+
 - Check if Docker container works
 
   ```
