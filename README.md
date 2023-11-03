@@ -67,6 +67,20 @@ Locate the Backend directory
   mcr.microsoft.com/mssql/server:2022-latest
   ```
 
+- Check if Docker container works
+
+  ```
+  sudo docker ps -a
+  ```
+
+  Output should be similar to
+
+  ```
+  CONTAINER ID   IMAGE                                        COMMAND                   CREATED         STATUS
+    PORTS    NAMES
+  d4a1999ef83e   mcr.microsoft.com/mssql/server:2022-latest   "/opt/mssql/bin/perm..."   2 minutes ago   Up 2 minutes   0.0.0.0:1433->1433/tcp, :::1433->1433/tcp   sql1
+  ```
+
 - Start an interactive bash shell inside the running container
   ```
   sudo docker exec -it sql1 "bash"
