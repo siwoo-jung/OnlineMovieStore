@@ -14,7 +14,7 @@ Online Movie Store application using TypeScript, npm, Azure SQL, and React. This
 
 ## ERD
 
-<img src="image/ERD.png" width="400">
+<img src="image/ERD.png" width="500">
 
 ## Instruction
 
