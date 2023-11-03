@@ -94,51 +94,31 @@ Locate the Backend directory
 
 ### 5.3 Set up basic database
 
-- Create a database called "TAFEDB"
+- Create a database called "TAFEDB", followed by `GO`
 
   ```
   CREATE DATABASE TAFEDB;
   ```
 
-  ```
-  GO
-  ```
-
-- Locate the TAFEDB database
+- Locate the TAFEDB database, followed by `GO`
   ```
   USE TAFEDB;
   ```
-  ```
-  GO
-  ```
-- Create a table 'MovieInfo' to store movie information
+- Create a table 'MovieInfo' to store movie information, followed by `GO`
 
   ```
   CREATE TABLE MovieInfo (id INT NOT NULL IDENTITY(1,1) PRIMARY KEY, title varchar(255) NOT NULL, year INT, runtime FLOAT, rating FLOAT)
   ```
 
-  ```
-  GO
-  ```
-
-- Create a table 'UserInfo' to store user information
+- Create a table 'UserInfo' to store user information, followed by `GO`
 
   ```
   CREATE TABLE UserInfo (id INT NOT NULL IDENTITY(1,1) PRIMARY KEY, username varchar(255) NOT NULL, password varchar(255) NOT NULL, admin varchar(10) NOT NULL DEFAULT 'NO')
   ```
 
-  ```
-  GO
-  ```
-
-- Insert one admin account to 'UserInfo' as an initial log-in account
-
+- Insert one admin account to 'UserInfo' as an initial log-in account, followed by `GO`
   ```
   INSERT INTO UserInfo (username, password, admin) VALUES ('admin1', 'admin1', 'YES');
-  ```
-
-  ```
-  GO
   ```
 
 ### 5.4 Frontend
