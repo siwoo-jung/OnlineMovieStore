@@ -29,17 +29,13 @@ Online Movie Store application using TypeScript, npm, Azure SQL (MSSQL), and Rea
 - Containerization
   - Docker
 
-## 3. ERD
-
-<img src="image/ERD.png" width="500">
-
-## 4. Pseudocode Flowchart
+## 3. Pseudocode Flowchart
 
 <img src="image/flowchart.png" width="500">
 
-## 5. Instruction - Set up
+## 4. Instruction - Set up
 
-### 5.1 Backend
+### 4.1 Backend
 
 Locate the Backend directory
 
@@ -49,7 +45,7 @@ Locate the Backend directory
 - Run the backend server
   - In terminal, type `node index`
 
-### 5.2 Containerization & Azure SQL
+### 4.2 Containerization & Azure SQL
 
 \*Disclaimer: In this project, SQL Server 2022 (16.x) Linux container image was tested on MacOS and may not work on other operating systems.
 
@@ -92,7 +88,7 @@ Locate the Backend directory
   /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ABCdefgh@
   ```
 
-### 5.3 Set up basic database
+### 4.3 Set up basic database
 
 - Create a database called "TAFEDB", followed by `GO`
 
@@ -125,7 +121,7 @@ Locate the Backend directory
   CREATE TABLE admin1 (title varchar(255));
   ```
 
-### 5.4 Frontend
+### 4.4 Frontend
 
 Locate the Frontend directory
 
@@ -134,9 +130,9 @@ Locate the Frontend directory
 - Run
   - In terminal, type `node index`
 
-## 6. Instruction - CLI Interaction
+## 5. Instruction - CLI Interaction
 
-### 6.1 Sign up
+### 5.1 Sign up
 
 Click the 'Signup' option. Enter desired username followed by password. Accounts are not admin by default.
 
@@ -146,7 +142,7 @@ Click the 'Signup' option. Enter desired username followed by password. Accounts
 ? Enter your password: [hidden]
 ```
 
-### 6.2 Log in
+### 5.2 Log in
 
 Click the 'Login' option. Enter existing username followed by password. Once logged-in, CLI is slightly different depending on whether a user is admin or not. To create a movie list later, log-in with an admin account.
 
@@ -156,7 +152,7 @@ Click the 'Login' option. Enter existing username followed by password. Once log
 ? Enter your password: [hidden]
 ```
 
-### 6.3 Add movies (Admin only)
+### 5.3 Add movies (Admin only)
 
 Once logged-in as admin, click 'Manage Movies' followed by 'Add Movies'. Enter title, year, runtime (in minutes), and rating (out of 10).
 
@@ -173,7 +169,7 @@ Updated Movie Info!
 ==================================
 ```
 
-### 6.4 Browse movies
+### 5.4 Browse movies
 
 If logged-in as admin, click 'Manage Movies' followed by 'Browse Movies'. If logged-in as non-admin, click 'Browse Movies'.
 
@@ -185,7 +181,7 @@ If logged-in as admin, click 'Manage Movies' followed by 'Browse Movies'. If log
 =================================
 ```
 
-### 6.5 Search movies
+### 5.5 Search movies
 
 If logged-in as admin, click 'Manage Movies' followed by 'Search Movies'. If logged-in as non-admin, click 'Search Movies'. Enter the title of movie.
 
@@ -201,7 +197,7 @@ Rating:  8.7/10
 ==================================
 ```
 
-### 6.6 Update movies (Admin only)
+### 5.6 Update movies (Admin only)
 
 Click 'Manage Movies' followed by 'Update Movies'. If logged-in as non-admin, click 'Search Movies'. Only year, runtime, or rating can be changed; title cannot be changed.
 
@@ -218,7 +214,7 @@ Updated Movie Info!
 ==================================
 ```
 
-### 6.7 Delete movies (Admin only)
+### 5.7 Delete movies (Admin only)
 
 Click 'Manage Movies' followed by 'Delete Movies'. Enter title, year, runningtime, and rating. If all information matches, the movie can be deleted.
 
@@ -235,7 +231,7 @@ Deleted Movie Info!
 ==================================
 ```
 
-### 6.8 Browse users (Admin only)
+### 5.8 Browse users (Admin only)
 
 Click 'Manage Users' followed by 'Browse Users'.
 
@@ -255,7 +251,7 @@ Click 'Manage Users' followed by 'Browse Users'.
 ============================================
 ```
 
-### 6.9 Delete users (Admin only)
+### 5.9 Delete users (Admin only)
 
 Click 'Manage Users' followed by 'Delete User'. Enter username to be deleted.
 
@@ -269,7 +265,7 @@ User Deleted!
 ==================================
 ```
 
-### 6.10 Change authorisation (Admin only)
+### 5.10 Change authorisation (Admin only)
 
 Click 'Manage Users' followed by 'Change Authorization'. Enter username to be affected. If that user is admin, it will be non-admin, and vice-versa.
 
@@ -283,7 +279,7 @@ Changed Authorization!
 ==================================
 ```
 
-### 6.11 Add watchlist (Non-admin only)
+### 5.11 Add watchlist (Non-admin only)
 
 Click 'Add Watchlist'. Enter title of the movie to be added to the watchlist.
 
@@ -296,7 +292,7 @@ Added to watchlist!
 ==================================
 ```
 
-### 6.12 View watchlist (Non-admin only)
+### 5.12 View watchlist (Non-admin only)
 
 Click 'View Watchlist'.
 
@@ -307,7 +303,7 @@ Click 'View Watchlist'.
 =================================
 ```
 
-### 6.13 Delete watchlist (Non-admin only)
+### 5.13 Delete watchlist (Non-admin only)
 
 Click 'Delete Watchlist'. Enter the title of the movie to be deleted from the watchlist.
 
@@ -320,7 +316,7 @@ Movie deleted from watchlist!
 ==================================
 ```
 
-### 6.14 Change password
+### 5.14 Change password
 
 Click 'Change Password'. Enter the current password, followed by new password.
 
